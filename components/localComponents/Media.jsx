@@ -30,9 +30,9 @@ const Media = () => {
           <div className="grid grid-cols-3 gap-4">
             {media &&
               media.map((img, index) => (
-                <span className="w-auto h-auto">
+                <span key={index} className="w-auto h-auto">
                 <Image
-                  key={index}
+                 
                   width={420}
                   height={420}
                   src={img} // Assuming the images are in JPEG format
