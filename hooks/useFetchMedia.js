@@ -10,7 +10,7 @@ const useFetchMedia = () => {
     const fetchMedia = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:8000/media/fetchMedia",
+          "http://16.171.35.48/media/fetchMedia",
           { withCredentials: true }
         );
         setMedia(response.data);

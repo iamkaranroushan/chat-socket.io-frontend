@@ -8,7 +8,7 @@ const useAllUsers = () => {
   useEffect(() => {
     const fetchUsers = async () => {
       try {
-        const response = await axios.get("http://localhost:8000/user/getAllUsers",{
+        const response = await axios.get("http://16.171.35.48/user/getAllUsers",{
           withCredentials: true
         });
         setUsers(response.data); // Assuming the response contains an array of users

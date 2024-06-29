@@ -10,7 +10,7 @@ const LoginPage = () => {
     try {
       // Make an HTTP POST request to the server
       const response = await axios.post(
-        "http://localhost:8000/auth/login",
+        "http://16.171.35.48/auth/login",
         userData,
         { withCredentials: true }
       );

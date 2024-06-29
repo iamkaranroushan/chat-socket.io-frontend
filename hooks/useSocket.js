@@ -24,7 +24,7 @@ const useSocket = () => {
   }, []);
   useEffect(() => {
     if(authToken){
-      const newSocket = io("http://localhost:8000", {
+      const newSocket = io("http://16.171.35.48", {
         auth: {
           token: authToken,
         },

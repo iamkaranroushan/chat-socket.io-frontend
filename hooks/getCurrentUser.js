@@ -9,7 +9,7 @@ const useSenderId = () => {
   useEffect(() => {
     const fetchSenderId = async () => {
       try {
-        const response = await axios.get("http://localhost:8000/user/getUsername", {
+        const response = await axios.get("http://16.171.35.48/user/getUsername", {
           withCredentials: true
         });
         const user = response.data;

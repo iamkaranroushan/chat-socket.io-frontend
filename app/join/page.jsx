@@ -8,7 +8,7 @@ const JoinPage = () => {
     console.log(userData);
     try {
       // Make an HTTP POST request to the server
-      const response = await axios.post("http://localhost:8000/auth/register", userData);
+      const response = await axios.post("http://16.171.35.48/auth/register", userData);
 
       // Handle the response
       if (response.status === 201) {
